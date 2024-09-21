@@ -52,7 +52,7 @@ impl Config {
                 dot: if dot.is_empty() {
                     "".to_owned()
                 } else {
-                    dot[..1].to_owned()
+                    dot.chars().nth(0).unwrap().to_string()
                 },
             },
         }
