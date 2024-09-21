@@ -4,7 +4,7 @@
 
 A very simple tab bar plugin for [zellij](https://github.com/zellij-org/zellij)
 
-This is a for of
+This is a fork of
 [github.com/tarkah/zellij-bare-bar](https://github.com/tarkah/zellij-bare-bar)
 
 </div>
