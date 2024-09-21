@@ -11,18 +11,36 @@ This is a fork of
 
 ## Plugin Settings
 
-- `active_color` &mdash; color of the text of an active tab segment
-(for example, `"#f0f0f0"`);
-- `inactive_color` &mdash; color of the text of an inactive tab segment
-(for example, `"#a0a0a0"`);
+- `active_color` &mdash; color of the text of an active tab segment;
+- `inactive_color` &mdash; color of the text of an inactive tab segment;
 - `locked_color` &mdash; color of the prefix
-- `text_background_color` &mdash; background color of a tab segment
-(for example, `"#303030"`);
-- `background_color` &mdash; background color of the rest of the plugin's
-pane (for example, `"#303030"`);
+- `text_background_color` &mdash; background color of a tab segment;
+- `background_color` &mdash; background color of the rest of the plugin's pane;
 - `dot` &mdash; dot character to use in the prefix (reflects mode)
 (for example, `"•"`);
 - `dot_locked_color` &mdash; dot color in the locked mode;
 - `dot_normal_color` &mdash; dot color in the normal mode;
 - `dot_action_color` &mdash; dot color in other modes (when an action
 is being performed).
+
+## Complete Configuration Example
+
+```kdl
+layout {
+    pane size=1 borderless=true {
+        plugin location="file:$HOME/.config/zellij/plugins/compact-bar.wasm" {
+            inactive_color "#303030"
+            text_background_color "#1e1e1e"
+            background_color "#1e1e1e"
+            dot "•"
+            dot_locked_color "#404040"
+            dot_normal_color "#70a040"
+            dot_action_color "#ffb070"
+        }
+    }
+    pane
+    pane size=1 borderless=true {
+        plugin location="status-bar"
+    }
+}
+```
