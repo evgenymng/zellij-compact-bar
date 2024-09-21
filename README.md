@@ -2,12 +2,16 @@
 
 # Zellij Compact Bar
 
-A very simple tab bar plugin for [zellij](https://github.com/zellij-org/zellij)
+Minimalistic tab bar plugin for [zellij](https://github.com/zellij-org/zellij).
 
-This is a fork of
-[github.com/tarkah/zellij-bare-bar](https://github.com/tarkah/zellij-bare-bar)
+This project is a fork of
+[github.com/tarkah/zellij-bare-bar](https://github.com/tarkah/zellij-bare-bar).
 
 </div>
+
+## Screenshots
+
+![](./assets/demo.png)
 
 ## Plugin Settings
 
@@ -29,7 +33,7 @@ is being performed).
 layout {
     pane size=1 borderless=true {
         plugin location="file:$HOME/.config/zellij/plugins/compact-bar.wasm" {
-            inactive_color "#303030"
+            inactive_color "#505050"
             text_background_color "#1e1e1e"
             background_color "#1e1e1e"
             dot "•"
