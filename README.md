@@ -1,10 +1,10 @@
 <div align="center">
 
-# Zellij Bare Bar
+# Zellij Compact Bar
 
 A very simple tab bar plugin for [zellij](https://github.com/zellij-org/zellij)
 
-For more information, see
+This is a for of
 [github.com/tarkah/zellij-bare-bar](https://github.com/tarkah/zellij-bare-bar)
 
 </div>

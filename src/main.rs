@@ -18,7 +18,7 @@ struct Segment {
 }
 
 #[derive(Default)]
-struct BareBarPlugin {
+struct CompactBarPlugin {
     /// Plugin's configuration.
     config: Config,
     /// Information about open tabs.
@@ -27,9 +27,9 @@ struct BareBarPlugin {
     mode_info: ModeInfo,
 }
 
-register_plugin!(BareBarPlugin);
+register_plugin!(CompactBarPlugin);
 
-impl ZellijPlugin for BareBarPlugin {
+impl ZellijPlugin for CompactBarPlugin {
     fn load(&mut self, settings: BTreeMap<String, String>) {
         set_selectable(true);
 
